@@ -47,12 +47,17 @@ The answers inside a standard Magic 8-Ball are:
   git clone https://github.com/ChrisBrowne01/Magic-8-Ball-PHP.git
   ```
 
-2. Start a PHP server
+2. Install **PHP 7.4 or later** on your system, if not done so already. Then add the php directory to your system PATH environment variable and click "OK" to save. Shutdown all running command prompt for installation to take affect.
+
+Test the installation by opening a command prompt and running the `php -v` command. You should see the version information of the installed PHP binary. 
+
+
+3. Start a PHP server
   ```bash
   php -S localhost:8000
   ```
 
-3. Open the app on your browser
+4. Open the app on your browser
   ```bash
   http://localhost:8000
   ```
@@ -69,14 +74,20 @@ php index.php
 >> [INPUT QUESTION HERE]
 ```
 
-3. Press enter to recieve your anwser from the spirts:
+3. Press enter to recieve your anwser from the spirts. It will then ask if you qant ri ask another. Y/y, returns Yes; N/n or anyother key, returns No. Have fun!
+Do you want to ask another question? (Y/N)
+Here an example:
 ```bash
 $ php index.php
 Tell me... what is your "yes" or "no" question?
 >> Should I do this project?
 Hmm I see... Your question is Should I do this project?... I understand why this weighs on you... I have contacted the spirit world.
 Here is your answer: Signs point to yes.
+Do you want to ask another question? (Y/N)
+>>N
+Goodbye!
 ```
+
 ## Technologies used
 
 - PHP
