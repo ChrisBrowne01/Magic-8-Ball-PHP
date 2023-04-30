@@ -7,6 +7,13 @@ function magic8Ball() {
   // Input user question
   $question = readline(">>");
 
+  // Check if the question is empty
+  if (empty(trim($question))) {
+    echo "\nPlease enter a valid question.\n";
+    magic8Ball();
+    return;
+  }
+
   // States the question has been recieved
   echo "\nHmm I see... Your question is $question... I understand why this weighs on you... I have contacted the spirit world.\nHere is your answer: "; 
 
@@ -80,8 +87,21 @@ function magic8Ball() {
       break;
     default:
       echo "Sorry but the spirt world can't answer that question, ask again.";
+    echo "\n\n";
   }
 }
 
 // Invoke the magic8Ball() function
 magic8Ball();
+
+function playAgain() {
+  echo "\nDo you want to ask another question? (Y/N)\n";
+  $answer = readline(">>");
+  if (strtolower($answer) === "y") {
+    magic8Ball();
+    playAgain();
+  } else {
+    echo "Goodbye!\n";
+  }
+}
+playAgain();
