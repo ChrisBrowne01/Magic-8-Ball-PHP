@@ -6,7 +6,7 @@ The [Magic 8-Ball](https://en.wikipedia.org/wiki/Magic_8_Ball) is a popular toy 
 
 This is a Magic 8-Ball web application built using PHP. The app allows users to ask a question and get a random answer from the 8-Ball.
 
-## Usage
+## About
 
 In this project, you’ll be creating a function that can answer any *“yes”* or *“no”* question.
 
@@ -57,6 +57,26 @@ The answers inside a standard Magic 8-Ball are:
   http://localhost:8000
   ```
 
+## How to play
+
+1. Open Terminal and type the follow and press "enter"
+```bash
+php index.php
+```
+
+2. Input a "yes" or "no" question where it is marked "`>>`"
+```bash
+>> [INPUT QUESTION HERE]
+```
+
+3. Press enter to recieve your anwser from the spirts:
+```bash
+$ php index.php
+Tell me... what is your "yes" or "no" question?
+>> Should I do this project?
+Hmm I see... Your question is Should I do this project?... I understand why this weighs on you... I have contacted the spirit world.
+Here is your answer: Signs point to yes.
+```
 ## Technologies used
 
 - PHP
